@@ -1,0 +1,47 @@
+#sketch {
+  font-family: 'Roboto Mono';
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  border: none;
+  font-family: 'Roboto Mono';
+}
+
+button:disabled {
+  opacity: 0.3;
+}
+
+button:disabled:hover {
+  opacity: 0.3;
+  text-decoration: none;
+  cursor: default;
+}
+
+button:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1rem;
+  font-family: 'Roboto Mono';
+}
+
+@media only screen and (max-width: 600px) {
+  #sketch {
+    transform: scale(0.6);
+  }
+}
